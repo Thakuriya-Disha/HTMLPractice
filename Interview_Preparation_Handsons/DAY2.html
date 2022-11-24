@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title> DAY 2 - DISHA</title>
+    </head>
+    <body>
+        <h1>Interview Preparation Handson 2 by Disha</h1>
+        <!--the br tag stands for line break, it is used to break a text and display it in web page.--><br>
+        <h3>Example of &lt;br&gt; tag</h3>
+            <strong>Without br: </strong>Hello Namaste Bonjour Konnichiwa Annyeong <br>
+            <strong>With br:</strong><br>Hello<br>Namaste<br>Bonjour<br>Konnichiwa<br>Annyeong
+        <hr>
+        <!--Types of Lists in HTML: 1. Ordered List 2. Unordered List 3. Description List (not often used in real life application)-->
+        <h3>Example for Lists:</h3>
+        <ol type="I"><li>ROMAN NUMERAL (OL)</li></ol>
+        <ol type="i"><li>roman numeral (OL)</li></ol>
+        <ol type="A"><li>UPPERCASE (OL)</li></ol>
+        <ol type="a"><li>lowercase (OL)</li></ol>
+        <ul type="none"><li>none (UL)</li></ul>
+        <ul type="disc"><li>Disc (UL)</li></ul>
+        <ul type="square"><li>Square (UL)</li></ul>
+        <ul type="circle"><li>Circle (UL)</li></ul>
+        <h3>Example of Description List:</h3>
+        <dl>
+            <dt><strong>NE India</strong></dt>
+            <dd>
+                North East consists of 8 states. Also called as the 8 sisters of India.<br>
+                NE shares international border with Bhutan, Bangladesh, Myanmar and China (Tibet).
+            </dd>
+            <br>
+            <dt><strong>The 8 Sisters</strong></dt>
+            <dd>
+                The 8 NE States are: Arunachal Pradesh, Assam, Manipur, Meghalaya,<br>
+                Mizoram, Nagaland, Tripura and Sikkim.<br>
+                They are well-known for their rich culture and heritage and are famous for their natural beauty.
+            </dd>
+        </dl>
+        <hr>
+        <!--The tags that define themselves to the browser as well as the developer are known as Semantic Tags-->
+        <h3> Examples of Semantic Tags: </h3>
+        a) &lt;header&gt;, b) &lt;nav&gt;, c) &lt;section&gt;, d) &lt;article&gt;, e) &lt;footer&gt;, f) &lt;form&gt;, g) &lt;table&gt;<br><br>
+        <hr><hr>
+        <h4>Write a code to create an ordered list with roman numbers</h4>
+        <ol type="I">
+            <li>Lover</li>
+            <li>Folklore</li>
+            <li>Evermore</li>
+        </ol>
+        <h4>Write a code to create an unordered list with circle</h4>
+        <ul type="circle">
+            <li>Fearless TV</li>
+            <li>Red TV</li>
+            <li>Midnights</li>
+        </ul><hr>
+        <h4>Write a code to create a link to https://www.prepbytes.com</h4>
+        <a href="https://www.prepbytes.com">This will open in the same window. Click here.</a><br>
+        <a href="https://www.prepbytes.com" target="_blank">This will open in a new tab. Click here.</a>
+        <!--values of the Target attribute= "_blank", "_self" (this is default value), "_parent"-->
+        <h4>Write a code to insert an image</h4>
+        This is Taylor Swift. She is THE Music Industry.<br>I have used Absolute Path to insert this image.<br>
+        <img src="https://assets.teenvogue.com/photos/63612fe62cdbf142665a84ac/master/pass/unnamed%20(1).png" alt="Taylor Swift" width="400">
+        <!--2 ways to add an image: 1) Relative Path and 2) Absolute Path-->
+        <br><br>
+        <hr><hr>
+        <h4>Create a table where you do colspan-</h4>
+        <table border>
+            <tr align="center">
+                <th>&nbsp Album Name &nbsp</th>
+                <td>&nbsp Lover &nbsp</td>
+                <td>&nbsp Folklore &nbsp</td>
+                <td>&nbsp Evermore &nbsp</td>
+                <td>&nbsp Fearless(TV) &nbsp</td>
+                <td>&nbsp Red(TV) &nbsp</td>
+                <td>&nbsp Midnights &nbsp</td>
+            </tr>
+            <tr align="center">
+                <th>&nbsp Year &nbsp</th>
+                <td>2018</td>
+                <td colspan="2">2020</td>
+                <td colspan="2">2021</td>
+                <td>2022</td>
+            </tr>
+        </table>
+        <br><hr>
+        <h4>Create a form containing input fields, radio buttons and checkboxes-</h4>
+        <h3><u>STUDENT DETAILS :-</u></h3>
+        <form action="./URL.html">
+            <label for="name1"><strong>First Name: </strong></label>
+            <input type="text" name="fname" id="name1" value="" placeholder="Enter your first name here" required>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <label for="name2"><strong>Last Name: </strong></label>
+            <input type="text" name="lname" id="name2" value="" placeholder="Enter your last name here" required>
+            <br><br>
+            <label for="myage"><strong>Age: </strong></label>
+            <input type="number" name="age" id="myage" value="" placeholder="Enter your age here">
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <label for="mygender"><strong>Gender: </strong></label>
+            <input type="radio" name="gender" id="mygender" value="Female">Female
+            <input type="radio" name="gender" id="mygender" value="Male">Male
+            <input type="radio" name="gender" id="mygender" value="Other">Other
+            <br><br>
+            <label for="mycontact"><strong>Contact: </strong></label>
+            <input type="tel" name="contact" id="mycontact" value="" placeholder="Enter your phone no. here" required>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <label for="alter"><strong>Alternate Contact: </strong></label>
+            <input type="tel" name="alterno" id="alter" value="" placeholder="Enter alternate no. here">
+            <br><br>
+            <label for="myemail"><strong>Email ID: </strong></label>
+            <input type="email" name="email" id="myemail" value="" placeholder="Enter your email id here" required>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <label for="mycourse"><strong>Course: </strong></label>
+            <input type="checkbox" name="course1" id="mycourse" value="HTML">HTML
+            <input type="checkbox" name="course2" id="mycourse" value="CSS">CSS
+            <input type="checkbox" name="course3" id="mycourse" value="CSS">JavaScript
+            <input type="checkbox" name="course4" id="mycourse" value="CSS">Full Stack
+            <br><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
